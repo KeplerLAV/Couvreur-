@@ -7,22 +7,22 @@ import "./globals.css"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "KaldoBaum Couverture - Expert en Toiture à Bordeaux",
+  title: "HOLDERBAUM - Expert en Toiture à Paris",
   description:
     "Votre expert en toiture, charpente et façade à Bordeaux. Savoir-faire artisanal, qualité garantie. Devis gratuit 24h/24.",
-  generator: "v0.app",
+  
   icons: {
     icon: [
       {
-        url: "/icon-light-32x32.png",
+        url: "téléchargement (2).png",
         media: "(prefers-color-scheme: light)",
       },
       {
-        url: "/icon-dark-32x32.png",
+        url: "téléchargement (2).png",
         media: "(prefers-color-scheme: dark)",
       },
       {
-        url: "/icon.svg",
+        url: "téléchargement (2).png",
         type: "image/svg+xml",
       },
     ],
