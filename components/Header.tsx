@@ -21,11 +21,12 @@ export default function Header() {
           <div className="flex items-center gap-2">
             <div className="text-xl font-bold">
               <Image
-                src="/téléchargement (2).png"
+                src="/telechargement.png"
                 alt="Logo"
                 width={100}
                 height={56}
-              />
+                />
+
             </div>
             <div className="flex items-center gap-2">
               <Phone className="h-4 w-4" />

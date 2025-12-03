@@ -4,25 +4,28 @@ import { Inter } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
 import "./globals.css"
 
+// Import Client Components uniquement
+// import Header from "@/components/Header"
+import Footer from "@/components/Footer"
+
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
   title: "HOLDERBAUM - Expert en Toiture à Paris",
   description:
     "Votre expert en toiture, charpente et façade à Bordeaux. Savoir-faire artisanal, qualité garantie. Devis gratuit 24h/24.",
-  
   icons: {
     icon: [
       {
-        url: "téléchargement (2).png",
+        url: "/telechargement.png",
         media: "(prefers-color-scheme: light)",
       },
       {
-        url: "téléchargement (2).png",
+        url: "/telechargement.png",
         media: "(prefers-color-scheme: dark)",
       },
       {
-        url: "téléchargement (2).png",
+        url: "/telechargement.png",
         type: "image/svg+xml",
       },
     ],
@@ -38,7 +41,16 @@ export default function RootLayout({
   return (
     <html lang="fr">
       <body className={`${inter.className} font-sans antialiased`}>
+        {/* Header animé (Client Component) */}
+        {/* <Header /> */}
+
+        {/* Contenu principal */}
         {children}
+
+        {/* Footer animé (Client Component) */}
+        {/* <Footer /> */}
+
+        {/* Analytics */}
         <Analytics />
       </body>
     </html>
